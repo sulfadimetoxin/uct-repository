@@ -65,8 +65,8 @@ SESSION_COOKIE_PATH = '/'
 OAISERVER_ID_PREFIX = 'oai:localhost'
 MAIL_SUPPRESS_SEND = os.environ.get('FLASK_DEBUG', False)
 
-S3_TENANT='change me'  # TODO: change me
+S3_TENANT='uct_repository_test$uct_repository_test'  # TODO: change me
 S3_SIGNATURE_VERSION='s3'
-S3_ENDPOINT_URL='changeme'  # TODO: change me
-S3_ACCESS_KEY_ID='changeme'  # TODO: change me
-S3_SECRET_ACCESS_KEY='changeme'  # TODO: change me
+S3_ENDPOINT_URL='https://cis-rgw.vscht.cz'  # TODO: change me
+S3_ACCESS_KEY_ID='0YRJO96LSUYA79O8S4DO'  # TODO: change me
+S3_SECRET_ACCESS_KEY='XWTsxLvpEfTCsiRRgT6V8ik2q3b08cjHHHa3co95'  # TODO: change me

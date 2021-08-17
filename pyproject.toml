@@ -29,32 +29,8 @@ oarepo-multilingual = "^2.4.3"
 
 s3-client-lib = "0.1.6"
 
-
-[tool.poetry.plugins."invenio_config.module"]
-records = "uct_repository.config"
-
-[tool.poetry.plugins."invenio_search.mappings"]
-records = "uct_repository.records.mappings"
-
-[tool.poetry.plugins."invenio_base.apps"]
-records = "uct_repository.records.ext:RecordsApp"
-
-[tool.poetry.plugins."invenio_base.api_apps"]
-records = "uct_repository.records.ext:RecordsApp"
-
 [tool.poetry.plugins."flask.commands"]
 uct_repository = "uct_repository.cli:uct_repository"
-
-[tool.poetry.plugins."invenio_jsonschemas.schemas"]
-records = "uct_repository.records.jsonschemas"
-
-[tool.poetry.plugins."invenio_pidstore.minters"]
-records = "uct_repository.records.minters:recid_minter_v2"
-all-records = "uct_repository.records.minters:records_all_minter"
-
-[tool.poetry.plugins."invenio_pidstore.fetchers"]
-records = "uct_repository.records.fetchers:recid_fetcher_v2"
-all-records = "uct_repository.records.fetchers:records_all_fetcher"
 
 [build-system]
 requires = ["poetry>=0.12"]
